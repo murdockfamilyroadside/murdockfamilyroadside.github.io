@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Website with Tailwind</title>
+    <title>Murdock Family Roadside</title>
     <link rel="stylesheet" href="output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100 font-serif">
+<body class="bg-gray-100 font-serif flex flex-col min-h-screen">
     <header class="bg-blue-700 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-lg">My Website</h1>
+            <h1 class="text-lg">Murdock Family Roadside</h1>
             <nav>
                 <ul class="flex space-x-4">
                     <li><a href="#" class="hover:text-blue-200">Home</a></li>
                     <li><a href="#" class="hover:text-blue-200">About</a></li>
-                    <li><a href="#" class="hover:text-blue-200">Services</a></li>
                     <li><a href="#" class="hover:text-blue-200">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <main class="flex-grow">
 
      <section class="mt-12">
         <div class="container mx-auto bg-gray-100 rounded-lg pt-12">
             <section class="flex flex-col justify-center items-center text-black">
-                <h2 class="text-3xl font-bold">Stranded? Murdock Family Roadside is here to help!</h2>
-                <p class="text-3xl mt-2">Fast, Reliable, and Ready</p>
-                <p class="text-xl mt-2">Weekdays, 10am-7pm PST</p>
-                <button class="mt-4 bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Call Now</button>
+                <h2 class="text-4xl text-center">Stranded? Murdock Family Roadside is here to help!</h2>
+                <p class="text-xl text-center mt-4 w-3/4">At Murdock Family Roadside, we pride ourselves on providing swift and efficient service to get you back on the road in no time. No matter the time or place, you can count on us to be there with a solution tailored to your needs.</p>
+                <p class="text-md mt-4 text-gray-400">Weekdays, 10am-7pm PST</p>
+                <button onclick="window.location.href='tel:+4253128123';" class="mt-8 bg-blue-700 text-white py-2 px-4 rounded-full">Call Now</button>
             </section>
         </div>
     </section>
 
-    <section class="mt-6">
+    <section class="mt-6 mb-12">
             <div class="absolute -top-[67px] lg:-top-[86px]" id="anchor-placeholder"></div>
                 <div class="container mx-auto bg-gray-100 rounded-lg py-4">
                    
@@ -79,9 +79,36 @@
             </div>
     </section>
 
+    <section class="bg-blue-700 text-white py-12 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">About Murdock Family Roadside</h2>
+            <p class="text-xl">
+                At Murdock Family Roadside, we are dedicated to providing unparalleled roadside assistance and emergency services. Founded on the principles of reliability, efficiency, and customer-centric support, our family-owned business has been a trusted partner for stranded motorists across the Northern Seattle Area. With a team of experienced professionals and a fleet of well-equipped vehicles, we ensure that help is never far away, day or night.
+            </p>
+        </div>
+    </section>
 
+    <section class="py-24 px-4 bg-gray-100">
+        <div class="container mx-auto text-center flex justify-between items-center">
+            <div class="w-1/2">
+                <h2 class="text-3xl mb-6">Contact Us</h2>
+                <p class="text-xl mb-8">Got a question or need help? Reach out to us!</p>
+            </div>
+            <div class="w-1/2 space-y-6">
+                <div>
+                    <p class="text-lg">(425) 312-8123</p>
+                </div>
+                <div>
+                    <p class="text-lg"><a href="mailto:info@murdockroadside.com" class="text-blue-500 hover:text-blue-700">info@murdockroadside.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <footer class="bg-blue-700 text-white p-4 mt-4">
+
+
+</main>
+    <footer class="bg-blue-700 text-white p-4">
         <div class="container mx-auto text-center">
             Copyright © 2024. All rights reserved.
         </div>
